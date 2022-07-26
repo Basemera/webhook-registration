@@ -1,0 +1,12 @@
+env/*
+*/__pycache__/*
+*/migrations/*
+*__pycache__/*
+*/__init__.py
+*/.env
+db.sqlite3
+.pytest_cache/*
+__pycache__/*
+*.pyc
+env/
+*/logs/*

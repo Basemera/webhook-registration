@@ -1,0 +1,22 @@
+# version: '3.9'
+# services:
+#   webhook-server:
+#     build:
+#       context: .
+#     ports:
+#       - "9876:9876"
+#     volumes:
+#       - .:/app/
+# Verion of docker-compose to use 
+version: "3.9"
+
+services:
+  webhookserver:
+    build:
+      context: . 
+    ports:
+      - "9876:9876"
+      
+    volumes: 
+      - .:/webhookserver
+    command: sh -c "python webhookserver/manage.py runserver 0.0.0.0:9876" 

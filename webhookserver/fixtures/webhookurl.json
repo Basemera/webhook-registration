@@ -1,0 +1,11 @@
+[
+    {
+        "model": "webhook.WebhookUrl",
+        "pk":1,
+        "fields": {
+            "url": "http://0.0.0.0:3000/test",
+            "token": "foo",
+            "status": "ACTIVE"
+        }
+    }
+]
